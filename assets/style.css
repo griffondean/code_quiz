@@ -1,8 +1,23 @@
+h1 {
+    padding-left: 2%;
+}
+
+p {
+    font-size: large;
+}
+
 button {
     display:block;
-    color: rgb(216, 67, 67);
-  }
+}
   
-  li {
+li {
     list-style-type: none;
-  }
+}
+
+#start-button {
+    color: rgb(216, 67, 67);
+}
+
+#view-scores button {
+    color: rgb(216, 67, 67);
+}

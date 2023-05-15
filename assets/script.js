@@ -36,7 +36,7 @@ var questionCount = 0;
 //keeping score
 let score = 0
 
-//Timer starts when the user clicks startButton (see above).
+// Timer starts when the user clicks startButton
 function setTime() {
   displayQuestions();
   let timerInterval = setInterval(function() {
@@ -50,7 +50,7 @@ function setTime() {
   }, 1000);
 }
 
-//function to load the questions on the page
+// Function to load the questions on the page
 function displayQuestions() {
   removeEls(startButton);
 
@@ -86,7 +86,7 @@ function displayQuestions() {
   }
 }
 
-
+// Function to gather user score
 function captureUserScore() {
   timer.remove();
   choices.textContent = "";
@@ -119,9 +119,6 @@ function captureUserScore() {
   results.append(postScoreBtn);
 }
 
-const saveScores = (array) => {
-  window.localStorage.setItem("highScores", JSON.stringify(array));
-}
 
 const defineScoresArray = (arr1, arr2) => {
   if(arr1 !== null) {
@@ -148,6 +145,7 @@ function displayAllScores() {
   });
 }
 
+// Function to display quiz score
 function viewScores() {
   viewScoresBtn.addEventListener("click", function(event) {
     event.preventDefault();
@@ -159,6 +157,7 @@ function viewScores() {
   });
 }
 
+// Button to clear scores
 function clearScoresBtn() {    
   let clearBtn = document.createElement("input");
   clearBtn.setAttribute("type", "button");
