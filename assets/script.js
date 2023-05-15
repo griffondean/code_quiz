@@ -1,18 +1,18 @@
-// a variable for start time
-let secondsLeft = 76;
+// Start time set to 75 seconds
+let secondsLeft = 75;
 
-//the element that displays the time
+// The element that displays the time
 let timer = document.getElementById("timer");
 
-//div for high scores
+// High scores div
 let scoresDiv = document.getElementById("scores-div");
 
 let buttonsDiv = document.getElementById("buttons")
 
-//button for high scores
+// Button for high scores
 let viewScoresBtn = document.getElementById("view-scores")
 
-//start button div
+// Start button div
 let startButton = document.getElementById("start-button");
 startButton.addEventListener("click", setTime);
 
@@ -27,13 +27,10 @@ let results = document.getElementById("results");
 var choices = document.getElementById("choices");
 
 
-// an array to store high scores
+// Array to store high scores
 let emptyArray = [];
 
-// the array of high scores from local storage
-let storedArray = JSON.parse(window.localStorage.getItem("highScores"));
-
-// keeping track of which question we're on
+// Tracking question count
 var questionCount = 0;
 
 //keeping score
